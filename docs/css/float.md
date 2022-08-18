@@ -12,7 +12,7 @@
 
 方式一：将父元素设置成行内块元素。
 
-```css
+```CSS
 .clearfix {
 	display: inline-block;
 }
@@ -20,7 +20,7 @@
 
 方式二：为父元素添加一个清除浮动后的 after 伪对象。
 
-```css
+```CSS
 .clearfix::after {
 	content: "";
 	display: block;
@@ -29,6 +29,7 @@
 	font-size: 0;
 	visibility: hidden;
 }
+
 /* 兼容 ie */
 .clearfix {
 	*zoom: 1;
@@ -37,18 +38,18 @@
 
 或者
 
-```css
+```CSS
 .clearfix::before, .clearfix::after {
-    content: "",
-    display: table;
+	content: "",
+	display: table;
 }
 
 .clearfix::after {
-    clear: both;
+	clear: both;
 }
 
 /* 兼容 ie */
 .clearfix {
-    *zoom: 1;
+	*zoom: 1;
 }
 ```
