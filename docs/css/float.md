@@ -14,7 +14,7 @@
 
 ```CSS
 .clearfix {
-	display: inline-block;
+  display: inline-block;
 }
 ```
 
@@ -22,17 +22,17 @@
 
 ```CSS
 .clearfix::after {
-	content: "";
-	display: block;
-	clear: both;
-	height: 0;
-	font-size: 0;
-	visibility: hidden;
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+  font-size: 0;
+  visibility: hidden;
 }
 
 /* 兼容 ie */
 .clearfix {
-	*zoom: 1;
+  *zoom: 1;
 }
 ```
 
@@ -40,16 +40,16 @@
 
 ```CSS
 .clearfix::before, .clearfix::after {
-	content: "",
-	display: table;
+  content: "",
+  display: table;
 }
 
 .clearfix::after {
-	clear: both;
+  clear: both;
 }
 
 /* 兼容 ie */
 .clearfix {
-	*zoom: 1;
+  *zoom: 1;
 }
 ```
